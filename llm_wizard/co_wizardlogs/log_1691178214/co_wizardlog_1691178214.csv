@@ -1,0 +1,58 @@
+systime, frame, from, to, action_type, action_name, args
+1691178221.192, 143, "system", "agent", "status", "spawn", 720
+1691178223.789, 200, "planner", "agent", "status", "at_junction", 3
+1691178223.823, 192, "system", "agent", "status", "start_record", "NONE"
+1691178228.423, 247, "co_wizard", "agent", "decision", "park_off", "none"
+1691178228.444, 247, "system", "dorothy", "system", "dorothy:co_wizard:parkoff"
+1691178239.065, 350, "co_wizard", "agent", "plan", "next_road", 918
+1691178248.666, 444, "co_wizard", "agent", "decision", "speed_up", 5
+1691178249.834, 456, "co_wizard", "agent", "decision", "speed_up", 5
+1691178259.804, 558, "planner", "agent", "decision", "stop", "red_light:691"
+1691178261.543, 576, "planner", "agent", "decision", "restart", "none"
+1691178261.636, 577, "planner", "agent", "status", "at_junction", 918
+1691178272.393, 688, "co_wizard", "agent", "plan", "next_road", 1846
+1691178277.413, 743, "planner", "agent", "decision", "stop", "red_light:707"
+1691178278.060, 750, "planner", "agent", "decision", "restart", "none"
+1691178278.856, 759, "planner", "agent", "status", "at_junction", 1846
+1691178288.092, 860, "planner", "agent", "decision", "stop", "blocked:729"
+1691178292.539, 905, "planner", "agent", "decision", "restart", "none"
+1691178303.618, 1023, "planner", "agent", "decision", "stop", "blocked:729"
+1691178307.765, 1067, "planner", "agent", "decision", "restart", "none"
+1691178318.713, 1188, "planner", "agent", "decision", "stop", "blocked:729"
+1691178322.600, 1232, "planner", "agent", "decision", "restart", "none"
+1691178333.046, 1352, "planner", "agent", "decision", "stop", "blocked:729"
+1691178336.760, 1395, "planner", "agent", "decision", "restart", "none"
+1691178347.845, 1517, "planner", "agent", "decision", "stop", "blocked:729"
+1691178350.269, 1541, "co_wizard", "agent", "plan", "next_road", 823
+1691178351.983, 1561, "planner", "agent", "decision", "restart", "none"
+1691178362.856, 1675, "planner", "agent", "decision", "stop", "blocked:729"
+1691178371.384, 1761, "co_wizard", "agent", "decision", "lane_change_right"
+1691178383.143, 1880, "planner", "agent", "decision", "restart", "none"
+1691178389.119, 1940, "planner", "agent", "status", "at_junction", 823
+1691178431.317, 2356, "planner", "agent", "decision", "stop", "red_light:691"
+1691178433.025, 2374, "planner", "agent", "decision", "restart", "none"
+1691178464.508, 2697, "co_wizard", "agent", "plan", "next_road", 906
+1691178464.792, 2701, "planner", "agent", "status", "at_junction", 906
+1691178482.260, 2882, "co_wizard", "agent", "decision", "lane_change_left"
+1691178494.979, 3021, "co_wizard", "agent", "decision", "lane_change_left"
+1691178509.515, 3170, "co_wizard", "agent", "plan", "next_road", 1828
+1691178509.525, 3171, "planner", "agent", "decision", "stop", "red_light:679"
+1691178510.265, 3179, "planner", "agent", "decision", "restart", "none"
+1691178510.373, 3180, "planner", "agent", "decision", "stop", "red_light:679"
+1691178511.173, 3188, "planner", "agent", "decision", "restart", "none"
+1691178511.254, 3189, "planner", "agent", "status", "at_junction", 1828
+1691178517.960, 3259, "co_wizard", "agent", "decision", "lane_change_right"
+1691178520.012, 3281, "co_wizard", "agent", "decision", "lane_change_right"
+1691178521.185, 3295, "co_wizard", "agent", "decision", "lane_change_right"
+1691178521.361, 3297, "co_wizard", "agent", "decision", "lane_change_right"
+1691178521.551, 3299, "co_wizard", "agent", "decision", "lane_change_right"
+1691178521.767, 3301, "co_wizard", "agent", "decision", "lane_change_right"
+1691178521.928, 3303, "co_wizard", "agent", "decision", "lane_change_right"
+1691178540.488, 3510, "co_wizard", "agent", "decision", "lane_change_right"
+1691178541.061, 3517, "co_wizard", "agent", "decision", "lane_change_right"
+1691178541.598, 3523, "co_wizard", "agent", "decision", "lane_change_right"
+1691178541.902, 3527, "co_wizard", "agent", "decision", "lane_change_right"
+1691178542.123, 3530, "co_wizard", "agent", "decision", "lane_change_right"
+1691178542.673, 3536, "co_wizard", "agent", "decision", "lane_change_right"
+1691178543.158, 3542, "co_wizard", "agent", "decision", "lane_change_right"
+1691178543.497, 3546, "co_wizard", "agent", "decision", "lane_change_right"

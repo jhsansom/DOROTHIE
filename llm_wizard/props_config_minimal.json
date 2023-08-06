@@ -1,0 +1,12 @@
+{
+    "map": "Town03",
+    "departure": {"location": [-6.446170, -79.055023, 0.275307], "rotation": [0.000000, 92.004189, 0.000000]},
+    "street_names": ["Baits", "Beal", "Fuller", "Bishop", "Bonisteel", "Broadway", "Draper", "Hayward", "Hubbard", "Murfin", "Plymouth", "Duffield", "Upland", "Bishop"],
+    "vehicle": "vehicle.audi.tt",
+    "npc_count": 0,
+  
+    "weather": {},
+  
+    "assets":  [{"type": "null.house", "location": [132, -147, 0], "rotation": [0, 0, 0]}]
+  }
+  

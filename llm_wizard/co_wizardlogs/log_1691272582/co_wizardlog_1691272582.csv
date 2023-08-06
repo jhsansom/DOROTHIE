@@ -1,0 +1,19 @@
+systime, frame, from, to, action_type, action_name, args
+1691272592.628, 543, "system", "agent", "status", "spawn", 1086
+1691272594.791, 596, "system", "agent", "status", "start_record", "NONE"
+1691272594.808, 603, "planner", "agent", "status", "at_junction", 3
+1691272597.267, 630, "co_wizard", "agent", "decision", "park_off", "none"
+1691272597.268, 630, "system", "dorothy", "system", "dorothy:co_wizard:parkoff"
+1691272598.438, 642, "co_wizard", "agent", "decision", "speed_up", 5
+1691272604.879, 705, "co_wizard", "agent", "plan", "next_road", 906
+1691272610.231, 762, "system", "dorothy", "system", "dorothy:co_wizard:sb_reach:0"
+1691272626.794, 932, "co_wizard", "agent", "decision", "manual_brake_release"
+1691272627.291, 937, "planner", "agent", "decision", "stop", "red_light:1057"
+1691272629.787, 963, "planner", "agent", "decision", "restart", "none"
+1691272629.874, 964, "planner", "agent", "status", "at_junction", 906
+1691272659.209, 1283, "co_wizard", "agent", "plan", "next_road", 1868
+1691272676.622, 1476, "planner", "agent", "decision", "stop", "red_light:1045"
+1691272678.840, 1501, "planner", "agent", "decision", "restart", "none"
+1691272678.931, 1502, "planner", "agent", "status", "at_junction", 1868
+1691272697.002, 1684, "planner", "agent", "decision", "stop", "blocked:1095"
+1691272790.175, 2584, "planner", "agent", "decision", "restart", "none"

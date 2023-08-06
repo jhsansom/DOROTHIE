@@ -1,0 +1,142 @@
+{
+    "map": "Town03",
+    "departure": {
+        "location": [
+            51.7,
+            -208.8,
+            0.275307
+        ],
+        "rotation": [
+            0.0,
+            180.004189,
+            0.0
+        ]
+    },
+    "vehicle": "vehicle.audi.tt",
+    "street_names": [
+        "Bishop",
+        "Duffield",
+        "Upland",
+        "Plymouth",
+        "Hubbard",
+        "Division",
+        "Draper",
+        "Fuller",
+        "Beal",
+        "Murfin",
+        "Baits",
+        "Hayward",
+        "Broadway",
+        "Bonisteel"
+    ],
+    "npc_count": 12,
+    "weather": {
+        "precipitation": 92.10457790620258
+    },
+    "assets": [
+        {
+            "type": "walker.pedestrian.0001",
+            "location": [
+                120,
+                -80,
+                9
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "null.house",
+            "location": [
+                -60.139858,
+                -168.531464,
+                6.0
+            ],
+            "rotation": [
+                0.0,
+                89.999962,
+                89.999962
+            ]
+        },
+        {
+            "type": "static.prop.ikea",
+            "location": [
+                -94,
+                40,
+                10
+            ],
+            "rotation": [
+                180,
+                90,
+                -90
+            ]
+        },
+        {
+            "type": "static.prop.coco",
+            "location": [
+                -22.386014,
+                37.762234,
+                7.0
+            ],
+            "rotation": [
+                0.0,
+                -89.999962,
+                89.999962
+            ]
+        },
+        {
+            "type": "static.prop.seveneleven",
+            "location": [
+                67.132866,
+                -147.552444,
+                12.75852
+            ],
+            "rotation": [
+                0.0,
+                1.4e-05,
+                89.999954
+            ]
+        },
+        {
+            "type": "static.prop.kfc",
+            "location": [
+                -24,
+                -20,
+                8
+            ],
+            "rotation": [
+                180,
+                45,
+                -90
+            ]
+        },
+        {
+            "type": "static.prop.qdoba",
+            "location": [
+                -18.881119,
+                111.888115,
+                5.0
+            ],
+            "rotation": [
+                180.0,
+                90.0,
+                -90.0
+            ]
+        },
+        {
+            "type": "null.shell",
+            "location": [
+                -28,
+                180,
+                10
+            ],
+            "rotation": [
+                0,
+                70,
+                90
+            ]
+        }
+    ]
+}

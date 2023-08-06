@@ -1,0 +1,4 @@
+systime, frame, from, to, action_type, action_name, args
+1691274198.999, 544, "system", "agent", "status", "spawn", 1924
+1691274200.948, 601, "system", "agent", "status", "start_record", "NONE"
+1691274201.103, 609, "planner", "agent", "status", "at_junction", 1
