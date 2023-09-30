@@ -1,102 +1,120 @@
+import prompts
+import openai
+import string
 
-
-#############################################################################################
-#############################################################################################
-#############################################################################################
-
-# This section contains the prompts themselves
-#header
-'''
-You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
-
-For navigational purposes, you have access to a planner function that you may call in the following manner:
-```Python
-loc1 = Landmark('Home') # this is the location of 'home'
-loc2 = Intersection('Broadway', 'Baits') # this is the intersection between two roads named 'Broadway' and 'Baits'
-loc3 = StreetSegment('Broadway', loc1, loc2) # this is the location of a street segment between loc1 and loc2
-Planner(loc1, [loc2, loc3]) # this planning function maps a route from the current position to loc1 while avoiding loc2 and loc3
-```
-Here is a sample output of the planner function. It lists all intersections and landmarks that will be passed along the way:
-```Python
-Planner(loc1, [])
->>> [['uturn'], ['straight', Intersection('Baits', 'Hubbard')], ['right'], ['straight', Landmark('Home')]]
-```
-
-The following is the history, which contains dialogue between yourself (ChaufferGPT) and the passenger. It also contains records you have made regarding road conditions:
-PASSENGER: can you take me to Arbys?
-CHAUFFEURGPT: yes
-PASSENGER: actually nevermind. can you take me to Wendys?
-CHAUFFEURGPT: no worries. yes, I can
-NOTE: there is construction blocking the intersection of Hayward and Baits
-PASSENGER: actually, I changed my mind again. can you take me to Arbys?
-
-This is the plan that is currently saved into your navigational history:
-```Python
-goal = Landmark('Arbys')
-Planner(goal, [])
->>> [['straight', Intersection('Fuller', 'Hubbard')], ['left'], ['straight', Landmark('Arbys')]]
-```
-
-Here is your current location:
-```Python
-loc1 = Intersection('Fuller', 'Draper')
-loc2 = Intersection('Fuller', 'Hubbard')
-current_location = StreetSegment('Fuller', loc1, loc2)
-facing_towards = loc2
-```
-
-Here is a description of your current visual input:
-There is a road in front of you with an ambulance that is blocking both lanes.
-
-You now have the following output types:
-- THINK: think step-by-step to reason about a problem
-- PLAN: write code to call the planner function if the current plan is no longer suitable
-- SPEAK: ouput dialogue for the passenger
-- ACTION: output one word from the set {left, right, uturn, straight} to pilot the car
-
-You must now produce an ouput of the following form. You do not need to output all output types. You do not need to output them in any specific order either.
-OUTPUTTYPE1
-Your outputs for output type 1
-OUTPUTTYPE2
-Your outputs for output type 2
-'''
-
-
-
-
-
-#############################################################################################
-#############################################################################################
-#############################################################################################
-
-
-
-
-
+verbose = True
 
 class LLMInterface:
 
-    def __init__(self, llm='cmd'):
+    def __init__(self, assets, llm='cmd'):
         self.llm = llm # By default, queries user input through CMD rather than an actual LLM
-        self.dialogue_history = [] # List of all dialogue history
         self.requires_evalutation = True # if True, LLM needs to be queried at next time step
+        self.new_goal = False
+        self.assets = assets
 
+        # State data
+        self.current_goal = None
+        self.dialogue_history = [] # List of all dialogue history
+        
     '''
         Prompts the LLM to adjust to an environmental change
     '''
     def evaluate(self):
         if self.requires_evalutation:
-            pass
+            result = self.prompt_high_level()
+            letter = parse_mc_response(result)
+            if letter == 'A' or letter == 'B':
+                self.goal_setting_prompt()
+                self.new_goal = True
+            #elif letter == 'B':
+                #self.dialogue_prompt()
+            else:
+                raise Exception(result)
+
+            self.requires_evalutation = False
+
+    '''
+        Compiles the high-level prompt
+    '''
+    def prompt_high_level(self):
+        prompt = prompts.get_high_level_prompt(self)
+
+        return self.comm_w_llm(prompt)
+
+    def goal_setting_prompt(self):
+        prompt, goals = prompts.get_low_level_goal_setting(self)
+        response = self.comm_w_llm(prompt)
+
+        letter = parse_mc_response(response)
+
+        self.current_goal = goals[letter]
+
+        return response
+
+    def dialogue_prompt(self):
+        prompt = prompts.get_low_level_dialogue(self)
+        response = self.comm_w_llm(prompt)
+        formatted_response = 'CHAUFFEURGPT: {response}'.format(response=response)
+        self.dialogue_history.append(formatted_response)
+
+        return response
+
+    def inject_llm_dialogue(self, dialogue):
+        formatted_response = 'CHAUFFEURGPT: {dialogue}'.format(dialogue=dialogue)
+        self.dialogue_history.append(formatted_response)
+
+
+    '''
+        This function actually sends the already-created prompt
+        to the LLM and receives the output
+    '''
+    def comm_w_llm(self, prompt):
+        if self.llm == 'cmd':
+            return receive_cmd_input(prompt)
+        elif self.llm == 'gpt4':
+            return receive_gpt4_input(prompt)
+        else:
+            raise Exception('Code not compatible with the LLM {llm} yet'.format(llm=self.llm))
 
     '''
         Adds string from the human representing a new communication
     '''
     def receive_dialogue(self, dialogue):
-        self.dialogue_history.append(dialogue)
-        self.requires_evalutation = True 
+        formatted_dialogue = 'PASSENGER: {dialogue}'.format(dialogue=dialogue)
+        self.dialogue_history.append(formatted_dialogue)
+        self.requires_evalutation = True
 
 def receive_cmd_input(prompt):
+    print('------------------------------------------------------------------------')
     print(prompt)
-    val = input("")
+    print('------------------------------------------------------------------------')
+    val = input("Input: ")
     return val
 
+
+def receive_gpt4_input(prompt):
+    gpt_response = openai.ChatCompletion.create(
+        model='gpt-4',
+        messages=[
+                {"role": "user", "content": prompt}
+            ],
+        temperature = 0
+    )
+
+    response_text = gpt_response['choices'][0]['message']['content']
+
+    if verbose:
+        print('------------------------------------------------------------------------')
+        print(prompt)
+        print('GPT4_RESPONSE:')
+        print(response_text)
+        print('------------------------------------------------------------------------')
+
+    return response_text
+
+def parse_mc_response(response):
+    for letter in string.ascii_uppercase:
+        if letter in response:
+            return letter
+    
+    raise Exception

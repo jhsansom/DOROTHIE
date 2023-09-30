@@ -1268,7 +1268,7 @@ def game_loop(args):
         agent = Co_WizardAgent(world.player, map_input_queue=map_input_queue, lpqueue=world.lpqueue)
 
         # Create LLM interface object
-        llm_interface = LLMInterface()
+        llm_interface = LLMInterface(simconfig['assets'])
         test_dialogue_str = "Take me to IKEA please"
         llm_interface.receive_dialogue(test_dialogue_str)
 
@@ -1397,11 +1397,20 @@ def game_loop(args):
 
             # Some code to query human user or LLM
             llm_interface.evaluate()
+            if llm_interface.new_goal:
+                llm_interface.new_goal = False
+
+                for asset in subgoal_assets:
+                    if llm_interface.current_goal == asset['type']:
+                        csx, csy, csz = asset['location']
+                        break
+
+                location = carla.Location(csx,csy,csz)
+                waypoint = world.map.get_waypoint(location)
+
             if llm_interface.requires_evalutation:
                 # Get the first subgoal
-                csx, csy, csz = subgoal_assets[0]['location']
-                location=carla.Location(csx,csy,csz)
-                waypoint=world.map.get_waypoint(location)
+                
 
                 # 
                 llm_interface.evaluate()

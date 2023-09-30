@@ -1,9 +1,0 @@
-systime, frame, from, to, action_type, action_name, args
-1691272928.101, 549, "system", "agent", "status", "spawn", 1203
-1691272929.961, 597, "system", "agent", "status", "start_record", "NONE"
-1691272930.258, 605, "planner", "agent", "status", "at_junction", 6
-1691272932.295, 629, "co_wizard", "agent", "decision", "park_off", "none"
-1691272932.315, 629, "system", "dorothy", "system", "dorothy:co_wizard:parkoff"
-1691272936.013, 668, "co_wizard", "agent", "decision", "speed_up", 5
-1691272937.416, 681, "co_wizard", "agent", "plan", "next_road", 1181
-1691272943.886, 746, "planner", "agent", "status", "at_junction", 1181
