@@ -1,40 +1,13 @@
 
-# Co_Wizard 
+# LLM Wizard
 
-Co-Wizard controls the agent’s behaviors and carries out language communication with the human participant to jointly achieve a goal. 
+This is the documentation for the LLM wizard subfolder, which is currently a work in progress.
 
-## Description of interface
-
-The left shows the driver's first person view The right is a map view of the whole town, while some places like home and person is not shown.
-
-## Co_Wizard high-level physical actions
-Each action is mapped to a rule-based local trajectory planner to generate a list of waypoints that the vehicle will drive through.
-- T: push-to-talk key. For communicating with Dorothy.
-- A: left lane change
-- D: right lane change
-- S: engage manual brake
-- R: release manual brake
-- F: enter/exit "parked" state (same as manual brake but with "Parked" overlay). 
-- U: attempt U-turn
-- up/down keys: increase/decrease speed by 5km/h
-- Left click on certain red dot on the map view: turn to the road represented by the dot
-  
+* `sdn_test.py`: this file will eventually contain code to loop through an SDN logfile, prompt the LLM, and log its performance. Right now it simply loads an initial map representation and prints it out 
+* `llm_interface.py`: this file contains the code to compile prompts and actually communicate them to the LLM. It is currently configured to work with GPT and with the command prompt (i.e., to just feed the prompts to CMD and let the user answer them as if they are the LLM)
+* `map_tool.py`: this file contains the code necessary to construct a text-based town map. It is currently only configured for Town 3 and needs to be hand-coded for other towns (by filling in the `concavities`, `intersection_ids`, and `town?_blank` variables)
+* `prompts.py`: this file contains a number of string templates that are used for prompting
+* `test_on_log.py`: this file ran an initial test on the log data to determine whether GPT-4 could perform well at goal setting. It compiles prompts for GPT-4 including the dialogue history and the sets of assets and actually prompts GPT-4
 
 
-## Co_Wizard belief tracking action
-Co-Wizard annotates the intended actions during and after the inter actions. Human participants can annotate by left clicking on a set of intersections to annotate a set of Jturn actions
-- P: start/exit the belief annotation mode
-- Z: abandon all plans now (usually when the plan is updated)
-- Left click on intersections on the map view: plan to arrive at this intersection, sequentially 
-- Right click on anywhere on the map view: set this place as subgoal and plan to arrive here 
-  
-
-
-## Description of executables:
-
-- co_wizard.py: Co_Wizard of Oz executable. Semi-autonomous navigation, user decides direction at intersection, speed, and lane changes.
-- co_wizard_map.py: 2D "google maps" view for co_wizard. Connects to CARLA server and to co_wizard.py via LCM
-- co_wizard_agent.py: A physical action control module that receive commands from co_wizard and interact with the local planner
-- co_wizard_local_planner.py: Modified from carla local_planner for waypoint navigation and used to do the PID control of the agent
-- co_wizard_speech_server.py: The speech server used to record and recognize the speech of the human participant
-- config_gen.py: Generate a random configuration and storyboard based on the given metaconfig and template
+* `llm_wizard.py`: I began to modify this code so that we could run the LLM in the CARLA simulator itself, but I did not get very far

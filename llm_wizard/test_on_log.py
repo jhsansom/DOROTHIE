@@ -53,18 +53,18 @@ def examine_log(log_path):
 
     return frac_correct
 
+if __name__ == '__main__':
+    parent_dir = '/data/owenh/arc_data/'
+    direcs = os.listdir(parent_dir)
+    num_direcs = len(direcs)
 
-parent_dir = '/data/owenh/arc_data/'
-direcs = os.listdir(parent_dir)
-num_direcs = len(direcs)
-
-frac_correct = 0
-for directory in direcs:
-    if 'log_' in directory:
-        full_path = parent_dir + directory + '/'
-        print('Testing directory = ' + full_path)
-        frac_correct += examine_log(full_path)
+    frac_correct = 0
+    for directory in direcs:
+        if 'log_' in directory:
+            full_path = parent_dir + directory + '/'
+            print('Testing directory = ' + full_path)
+            frac_correct += examine_log(full_path)
 
 
-frac_correct = frac_correct / num_direcs
-print('Overall fraction of correct goal updates: {:.2f}'.format(frac_correct))
+    frac_correct = frac_correct / num_direcs
+    print('Overall fraction of correct goal updates: {:.2f}'.format(frac_correct))
