@@ -105,16 +105,29 @@ def get_low_level_dialogue(llm_interface):
 ################################## Physical action prompts ##################################
 #############################################################################################
 
-low_level_phys_action = '''
+low_level_phys_action_stopped = '''
 You have been tasked with choosing the next physical action.
+Your car is currently stopped.
+You can choose a new action from among these options:
+'''
+
+low_level_phys_action_started = '''
+You have been tasked with choosing the next physical action.
+Your current speed is {car_speed} kph.
+You must make a full stop at each intersection.
 You can choose a new action from among these options:
 '''
 
 action_choice = "({letter}) {potential_action}\n"
 
-all_actions = ['LaneFollow', 'LaneSwitch', 'UTurn', 'JTurn', 'Stop', 'Start', 'SpeedChange']
+stopped_actions_nice = ['Start']
+started_actions_nice = ['Lane Switch', 'U Turn', 'Regular Turn', 'Stop', 'Speed Change']
+
+stopped_actions = ['Start']
+started_actions = ['LaneSwitch', 'UTurn', 'JTurn', 'Stop', 'SpeedChange']
 
 def get_low_level_phys_action(llm_interface, frame):
+
     prompt = header
     prompt += print_dialogue(llm_interface)
     prompt += '\n'
@@ -122,16 +135,51 @@ def get_low_level_phys_action(llm_interface, frame):
     prompt += '\n'
     prompt += print_action_history(llm_interface)
     prompt += '\n'
-    prompt += low_level_phys_action
-    actions = {}
-    for i, action in enumerate(all_actions):
+
+    if llm_interface.car_is_stopped:
+        nice_actions = stopped_actions_nice
+        actions = stopped_actions
+        prompt += low_level_phys_action_stopped
+    else:
+        nice_actions = started_actions_nice
+        actions = started_actions
+        prompt += low_level_phys_action_started.format(car_speed=llm_interface.car_speed)
+    
+    actions_dict = {}
+    for i, action in enumerate(actions):
         letter = string.ascii_uppercase[i]
-        prompt += action_choice.format(letter=letter, potential_action=action)
-        actions[letter] = action
+        prompt += action_choice.format(letter=letter, potential_action=nice_actions[i])
+        actions_dict[letter] = action
 
     prompt += only_mc
 
-    return prompt, actions
+    return prompt, actions_dict
+
+def get_followup_jturn(llm_interface):
+    prompt = 'You chose to make a regular turn.\n'
+    yaw = llm_interface.town_map.yaw
+    prompt += f'You are currently facing at an angle of {yaw} degrees. '
+    prompt += 'In this context, 0 degrees would be facing directly right. '
+    prompt += 'A positive angle 0 < x < 180 would be facing up.\n'
+    prompt += 'What angle would you like to add to this angle?\n'
+    prompt += 'Provide ONLY an integer value between -180 and 180\n'
+    prompt += 'Do NOT output anything except for this number.\n'
+
+    return prompt
+
+def get_followup_speedchange(llm_interface):
+    prompt = 'You chose to make a speed change.\n'
+    speed = llm_interface.car_speed
+    prompt += f'You are currently traveling at {speed} kph.\n'
+    prompt += 'Which of the following would you like to do?\n'
+    prompt += '(A) Increase your speed\n'
+    prompt += '(B) Decrease your speed\n'
+
+    prompt += only_mc
+
+    return prompt
+
+
 
 def print_action_history(llm_interface):
     prompt = 'PHYSICAL ACTION HISTORY:\n'

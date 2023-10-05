@@ -125,7 +125,7 @@ class TownMap:
 
         x = row.iloc[0][' x']
         y = row.iloc[0][' y']
-        vehicle_pos = self.get_absolute_position2((x,y))
+        vehicle_pos = self.get_absolute_position2(road_id, (x,y))
 
         yaw = (-yaw % 360)
         print(f'yaw = {yaw}')
@@ -141,6 +141,8 @@ class TownMap:
         else:
             self.vehicle_label = 'v'
             self.insert_char('v', vehicle_pos)
+
+        self.yaw = yaw
         
 
     def load_map_at_frame(self, frame):
@@ -227,46 +229,62 @@ class TownMap:
 
         return (x_coor, y_coor)
 
-    def get_absolute_position2(self, coor):
+    def get_absolute_position2(self, road_id, coor):
         node1 = None
         node2 = None
         id1 = None
         id2 = None
 
-        nodes = self.town_data['meta_map']['nodes']
-
-        distances = []
-        for node in nodes:
-            id_num = node['id']
-            x = node['x_axis']
-            y = node['y_axis']
-            dist_sq = (coor[0] - x)**2 + (coor[1] - y)**2
-
-            distances.append(dist_sq)
-
-        sorted_dist = np.argsort(distances)
-        node1_rep = nodes[sorted_dist[0]]
-        node1 = (node1_rep['x_axis'], node1_rep['y_axis'])
-        id1 = intersection_ids[node1_rep['id']]
-        x_diff = (node1[0] - coor[0]) > 0
-        y_diff = (node1[1] - coor[1]) > 0
-
-        node2_rep = nodes[sorted_dist[1]]
-        node2 = (node2_rep['x_axis'], node2_rep['y_axis'])
-        id2 = intersection_ids[node2_rep['id']]
+        # Attempt to get position of intersections attached to current road
+        intersections = []
+        locations = []
+        for node in self.town_data['meta_map']['nodes']:
+            if road_id in node['neighbor_edge']:
+                intersection = intersection_ids[node['id']]
+                intersections.append(intersection)
+                locations.append((node['x_axis'], node['y_axis']))
 
         found_better_node = False
-        for i in range(len(nodes) - 1):
-            potential_node = nodes[sorted_dist[i+1]]
-            potential_coors = (potential_node['x_axis'], potential_node['y_axis'])
-            x_diff_pot = (potential_coors[0] - coor[0]) > 0
-            y_diff_pot = (potential_coors[1] - coor[1]) > 0
 
-            if (x_diff != x_diff_pot) and (y_diff != y_diff_pot):
-                found_better_node = True
-                node2 = potential_coors
-                id2 = intersection_ids[potential_node['id']]
-                break
+        if len(intersections) >= 2:
+            id1 = intersections[0]
+            id2 = intersections[1]
+            node1 = locations[0]
+            node2 = locations[1]
+        else:
+            nodes = self.town_data['meta_map']['nodes']
+
+            distances = []
+            for node in nodes:
+                id_num = node['id']
+                x = node['x_axis']
+                y = node['y_axis']
+                dist_sq = (coor[0] - x)**2 + (coor[1] - y)**2
+
+                distances.append(dist_sq)
+
+            sorted_dist = np.argsort(distances)
+            node1_rep = nodes[sorted_dist[0]]
+            node1 = (node1_rep['x_axis'], node1_rep['y_axis'])
+            id1 = intersection_ids[node1_rep['id']]
+            x_diff = (node1[0] - coor[0]) > 0
+            y_diff = (node1[1] - coor[1]) > 0
+
+            node2_rep = nodes[sorted_dist[1]]
+            node2 = (node2_rep['x_axis'], node2_rep['y_axis'])
+            id2 = intersection_ids[node2_rep['id']]
+
+            for i in range(len(nodes) - 1):
+                potential_node = nodes[sorted_dist[i+1]]
+                potential_coors = (potential_node['x_axis'], potential_node['y_axis'])
+                x_diff_pot = (potential_coors[0] - coor[0]) > 0
+                y_diff_pot = (potential_coors[1] - coor[1]) > 0
+
+                if (x_diff != x_diff_pot) and (y_diff != y_diff_pot):
+                    found_better_node = True
+                    node2 = potential_coors
+                    id2 = intersection_ids[potential_node['id']]
+                    break
 
         node1_text_coor = get_intersection_coordinates(id1)
         node2_text_coor = get_intersection_coordinates(id2)

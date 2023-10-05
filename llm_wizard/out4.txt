@@ -1,0 +1,7444 @@
+FRAME: 349
+FRAME: 350
+FRAME: 351
+FRAME: 352
+FRAME: 353
+FRAME: 354
+FRAME: 355
+FRAME: 356
+FRAME: 357
+FRAME: 357
+FRAME: 366
+FRAME: 367
+FRAME: 398
+FRAME: 399
+FRAME: 400
+FRAME: 401
+FRAME: 402
+FRAME: 403
+FRAME: 404
+FRAME: 405
+FRAME: 406
+FRAME: 407
+FRAME: 408
+FRAME: 409
+FRAME: 409
+FRAME: 421
+FRAME: 422
+FRAME: 432
+yaw = 268
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     v     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 442
+yaw = 268
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     v     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 476
+FRAME: 480
+FRAME: 503
+yaw = 268
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━v╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Correct!
+FRAME: 512
+yaw = 264
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━v╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was JTurn
+FRAME: 538
+FRAME: 579
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━<B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 598
+FRAME: 619
+FRAME: 690
+FRAME: 691
+FRAME: 692
+FRAME: 693
+FRAME: 694
+FRAME: 695
+FRAME: 696
+FRAME: 697
+FRAME: 697
+FRAME: 698
+FRAME: 698
+FRAME: 712
+FRAME: 746
+FRAME: 1165
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬<━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 1175
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬<━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was JTurn
+FRAME: 1261
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠<╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 1266
+FRAME: 1267
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠<╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 1267
+yaw = 179
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠<╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+F
+------------------------------------------------------------------------
+Incorrect; correct action was JTurn
+FRAME: 1267
+FRAME: 1268
+FRAME: 1269
+FRAME: 1270
+FRAME: 1271
+FRAME: 1272
+FRAME: 1273
+FRAME: 1273
+FRAME: 1284
+yaw = 159
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G <━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+D
+------------------------------------------------------------------------
+Correct!
+FRAME: 1319
+FRAME: 1333
+yaw = 159
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G <━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character < to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 1356
+yaw = 91
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ^━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character ^ to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 1357
+yaw = 89
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ^━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character ^ to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 1411
+FRAME: 1412
+FRAME: 1413
+FRAME: 1414
+FRAME: 1415
+FRAME: 1416
+FRAME: 1417
+FRAME: 1418
+FRAME: 1419
+FRAME: 1420
+FRAME: 1420
+FRAME: 1466
+FRAME: 1509
+yaw = 22
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏>━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 1517
+yaw = 13
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━>╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 1542
+yaw = 13
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━>╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 1546
+yaw = 11
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━>╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Correct!
+FRAME: 1634
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  v     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 1653
+FRAME: 1685
+FRAME: 1686
+FRAME: 1687
+FRAME: 1688
+FRAME: 1689
+FRAME: 1690
+FRAME: 1691
+FRAME: 1692
+FRAME: 1693
+FRAME: 1694
+FRAME: 1695
+FRAME: 1695
+FRAME: 1705
+FRAME: 1716
+FRAME: 1734
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 1736
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1739
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1740
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1741
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1743
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1746
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1775
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+D
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1780
+FRAME: 1783
+FRAME: 1784
+FRAME: 1785
+FRAME: 1786
+FRAME: 1787
+FRAME: 1788
+FRAME: 1789
+FRAME: 1790
+FRAME: 1790
+FRAME: 1798
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+D
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 1799
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+D
+------------------------------------------------------------------------
+Correct!
+FRAME: 1810
+FRAME: 1811
+FRAME: 1812
+FRAME: 1812
+FRAME: 1813
+FRAME: 1814
+FRAME: 1815
+FRAME: 1816
+FRAME: 1817
+FRAME: 1817
+FRAME: 1833
+FRAME: 1834
+FRAME: 1835
+FRAME: 1836
+FRAME: 1836
+FRAME: 1843
+FRAME: 1853
+FRAME: 1879
+FRAME: 1880
+FRAME: 1881
+FRAME: 1882
+FRAME: 1883
+FRAME: 1884
+FRAME: 1885
+FRAME: 1886
+FRAME: 1887
+FRAME: 1888
+FRAME: 1889
+FRAME: 1889
+FRAME: 1901
+FRAME: 1902
+FRAME: 1917
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 1936
+FRAME: 1939
+FRAME: 1943
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1948
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 1951
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  v     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2002
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  v  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 2071
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  v  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 2073
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  v  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2077
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  v  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was JTurn
+FRAME: 2111
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦v━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2227
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  v     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 2372
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  v     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 2381
+yaw = 271
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  v     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was JTurn
+FRAME: 2408
+yaw = 268
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━v━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2413
+yaw = 268
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━v━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2443
+yaw = 275
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2448
+yaw = 277
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 2465
+FRAME: 2507
+FRAME: 2508
+FRAME: 2509
+FRAME: 2510
+FRAME: 2511
+FRAME: 2512
+FRAME: 2513
+FRAME: 2514
+FRAME: 2515
+FRAME: 2516
+FRAME: 2517
+FRAME: 2518
+FRAME: 2519
+FRAME: 2519
+FRAME: 2529
+FRAME: 2539
+yaw = 277
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Correct!
+FRAME: 2548
+yaw = 281
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2553
+FRAME: 2553
+yaw = 285
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2557
+yaw = 288
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+E
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 2570
+FRAME: 2590
+FRAME: 2591
+FRAME: 2592
+FRAME: 2593
+FRAME: 2594
+FRAME: 2595
+FRAME: 2596
+FRAME: 2596
+FRAME: 2617
+FRAME: 2648
+FRAME: 2649
+FRAME: 2650
+FRAME: 2651
+FRAME: 2652
+FRAME: 2653
+FRAME: 2654
+FRAME: 2655
+FRAME: 2656
+FRAME: 2657
+FRAME: 2658
+FRAME: 2659
+FRAME: 2660
+FRAME: 2661
+FRAME: 2662
+FRAME: 2663
+FRAME: 2663
+FRAME: 2678
+FRAME: 2707
+FRAME: 2747
+FRAME: 2748
+FRAME: 2749
+FRAME: 2750
+FRAME: 2751
+FRAME: 2752
+FRAME: 2753
+FRAME: 2754
+FRAME: 2755
+FRAME: 2756
+FRAME: 2757
+FRAME: 2758
+FRAME: 2759
+FRAME: 2760
+FRAME: 2761
+FRAME: 2762
+FRAME: 2763
+FRAME: 2764
+FRAME: 2765
+FRAME: 2766
+FRAME: 2767
+FRAME: 2768
+FRAME: 2769
+FRAME: 2770
+FRAME: 2770
+FRAME: 2784
+FRAME: 2849
+FRAME: 2850
+FRAME: 2851
+FRAME: 2852
+FRAME: 2853
+FRAME: 2854
+FRAME: 2855
+FRAME: 2856
+FRAME: 2857
+FRAME: 2858
+FRAME: 2859
+FRAME: 2860
+FRAME: 2861
+FRAME: 2862
+FRAME: 2863
+FRAME: 2864
+FRAME: 2865
+FRAME: 2866
+FRAME: 2867
+FRAME: 2868
+FRAME: 2868
+FRAME: 2889
+FRAME: 2890
+FRAME: 2913
+yaw = 288
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 2919
+yaw = 289
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   v┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character v to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2986
+FRAME: 2995
+yaw = 344
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━>━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 2998
+yaw = 347
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━>━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 3045
+yaw = 2
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━>━━━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was LaneSwitch
+FRAME: 3102
+yaw = 0
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━>━━━━━━━━━┛
+The vehicle is currently represented by the character > to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+LaneSwitch Direction 1
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was SpeedChange
+FRAME: 3244
+FRAME: 3245
+FRAME: 3246
+FRAME: 3247
+FRAME: 3248
+FRAME: 3249
+FRAME: 3250
+FRAME: 3251
+FRAME: 3252
+FRAME: 3253
+FRAME: 3254
+FRAME: 3255
+FRAME: 3256
+FRAME: 3257
+FRAME: 3258
+FRAME: 3259
+FRAME: 3260
+FRAME: 3261
+FRAME: 3262
+FRAME: 3263
+FRAME: 3264
+FRAME: 3265
+FRAME: 3266
+FRAME: 3267
+FRAME: 3268
+FRAME: 3269
+FRAME: 3270
+FRAME: 3271
+FRAME: 3271
+FRAME: 3293
+FRAME: 3317
+FRAME: 3318
+FRAME: 3374
+yaw = 88
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+PASSENGER: what is your plan
+CHAUFFEURGPT: I plan to go to Murfin Street
+CHAUFFEURGPT: and then I'll turn to Broadway Street
+CHAUFFEURGPT: and then to Upland Avenue
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━╣
+J ┃  ┃     ┃        ┃  ^
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character ^ to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+LaneSwitch Direction 1
+SpeedChange speed 5
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+A
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 3379
+yaw = 88
+list assignment index out of range
+FRAME: 3379
+yaw = 88
+list assignment index out of range
+FRAME: 3380
+yaw = 88
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+PASSENGER: what is your plan
+CHAUFFEURGPT: I plan to go to Murfin Street
+CHAUFFEURGPT: and then I'll turn to Broadway Street
+CHAUFFEURGPT: and then to Upland Avenue
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━^
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character ^ to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+LaneSwitch Direction 1
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID -6.103515625e-05
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Stop
+FRAME: 3382
+FRAME: 3383
+FRAME: 3384
+FRAME: 3385
+FRAME: 3386
+FRAME: 3387
+FRAME: 3388
+FRAME: 3389
+FRAME: 3390
+FRAME: 3391
+FRAME: 3392
+FRAME: 3393
+FRAME: 3394
+FRAME: 3394
+FRAME: 3418
+FRAME: 3419
+FRAME: 3508
+FRAME: 3521
+FRAME: 3522
+FRAME: 3523
+FRAME: 3524
+FRAME: 3525
+FRAME: 3526
+FRAME: 3527
+FRAME: 3527
+FRAME: 3574
+yaw = 88
+------------------------------------------------------------------------
+
+You are ChauffeurGPT. You are responsible for safely piloting a car according to the instructions of a passenger.
+You must communicate with the passenger and make high-level decisions regarding the current navigational goals.
+
+DIALOGUE HISTORY:
+PASSENGER: hello
+CHAUFFEURGPT: hello
+CHAUFFEURGPT: where should I go
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Ikea
+CHAUFFEURGPT: I cannot turn right
+CHAUFFEURGPT: should I go straight
+PASSENGER: yes
+PASSENGER: please go straight
+CHAUFFEURGPT: okay
+PASSENGER: please stop
+CHAUFFEURGPT: what should I do
+PASSENGER: please go to Ikea
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I think I'm at the Ikea
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: could you tell me when to stop
+PASSENGER: please stop
+CHAUFFEURGPT: is this good
+PASSENGER: please stop
+PASSENGER: yes
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: where should I go next
+PASSENGER: please go to Seven Eleven
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to Seven Eleven
+CHAUFFEURGPT: I think we're at the Seven Eleven
+PASSENGER: please move up a little more
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: is this good
+PASSENGER: yes
+CHAUFFEURGPT: what should I do next
+PASSENGER: please go to Annabelle's new house
+CHAUFFEURGPT: I do not know where Annabelle's new house is
+CHAUFFEURGPT: could you let tell me where it is
+PASSENGER: please make a left on Upland Avenue
+CHAUFFEURGPT: I cannot turn left on Upland Avenue
+PASSENGER: Annabelle's house is at the roundabout
+CHAUFFEURGPT: okay
+CHAUFFEURGPT: I'll go to the roundabout
+PASSENGER: what is your plan
+CHAUFFEURGPT: I plan to go to Murfin Street
+CHAUFFEURGPT: and then I'll turn to Broadway Street
+CHAUFFEURGPT: and then to Upland Avenue
+PASSENGER: can you turn at Bishop Street
+CHAUFFEURGPT: no
+CHAUFFEURGPT: but I can turn at Upland Avenue
+PASSENGER: okay
+
+CURRENT MAP:
+
+  1  2  3  4  5  6  7  8
+A    ┏━━━━━╦━━━━━╦━━╦━━┓
+B    ┃     ┃     ┃  ┃  ┃
+C ┏━━╬F━━━━╬━━━━━╬━━╣  ┃
+D ┃  ┃     ┃     ┃  ┃  ┃
+E ┃  C     ┃     ╠━━╣  ┃
+F ┃  ┃  ┏━━╩━━┓  ┃  ┃  ┃
+G ╠━╦╬━━B     ╠━━╩━━╩━━╣
+H ┃ ┃┃  ┗━━D━━┛        ┃
+I ╠━┛┃     ┃     ╞━━╦━━^
+J ┃  ┃     ┃        ┃  ┃
+K ╚━━╬━━━━━╬━━━━━━━━┛  ┃
+L   E┃  ┏G━╣           ┃
+M    ┗━━╩━━╩━━━━━━━━━━━┛
+The vehicle is currently represented by the character ^ to represent the direction it is facing.
+Landmark labels:
+A: person
+B: house
+C: Ikea
+D: coco
+E: Seven Eleven
+F: kfc
+G: shell
+
+Street names:
+The streets on this map are as follows:
+Murfin: A4 -> A6 -> A7
+Broadway: C2 -> C4 -> C6
+Draper: E6 -> E7
+Bishop: G1 -> G2 -> G6 -> G7 -> G8 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Plymouth: I6 -> I7 -> I8
+Bonisteel: K2 -> K4
+Hayward: M3 -> M4
+Division: G1 -> I1 -> K1
+Duffield: C2 -> G2 -> K2 -> M3
+Upland: A4 -> C4 -> K4 -> L4 -> M4 -> M3 -> F4 -> F4 -> G5 -> G5 -> G3 -> H4 -> H4
+Beal: A6 -> C6 -> E6 -> G6
+Hubbard: A7 -> C7 -> E7 -> G7
+Baits: G8 -> I8
+Fuller:  -> G2
+
+PHYSICAL ACTION HISTORY:
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+JTurn RoadID -88.88107299804688
+Stop
+Start
+JTurn RoadID -19.734130859375
+Stop
+Start
+JTurn RoadID -89.73523712158203
+Stop
+Start
+Stop
+Start
+Start
+Stop
+Start
+JTurn RoadID -115.17472076416016
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed -5
+SpeedChange speed 5
+Start
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+Stop
+Start
+SpeedChange speed 5
+JTurn RoadID 0.0
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID 0.0560150146484375
+SpeedChange speed 5
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed -5
+SpeedChange speed -5
+Stop
+Start
+SpeedChange speed 5
+SpeedChange speed 5
+SpeedChange speed 5
+LaneSwitch Direction 1
+SpeedChange speed 5
+Stop
+Start
+JTurn RoadID -6.103515625e-05
+Stop
+
+
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+(A) Lane Switch
+(B) U Turn
+(C) Regular Turn
+(D) Stop
+(E) Start
+(F) Speed Change
+
+Please ONLY output the letter corresponding to your choice.
+Do not output any text except for the letter corresponding to your choice
+
+GPT4_RESPONSE:
+C
+------------------------------------------------------------------------
+Incorrect; correct action was Start
+FRAME: 3587
+FRAME: 3588
+FRAME: 3589
+FRAME: 3590
+FRAME: 3591
+FRAME: 3592
+FRAME: 3593
+FRAME: 3594
+FRAME: 3595
+FRAME: 3596
+FRAME: 3597
+FRAME: 3597
+FRAME: 3608
+Total physical actions = 60
+Slot type accuracy = 0.18333333333333332
+Slot val accuracy = 0.0

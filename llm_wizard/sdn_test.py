@@ -58,6 +58,8 @@ class SDN_Tester:
     def process_next_timestep(self):
         elem = self.annotated_log[self.cur_timestep]
 
+        print(f'FRAME: {elem["frame"]}')
+
         if elem['type'] == 'DialogueMove':
             if elem['from'] == 'dorothy':
                 self.interface.receive_dialogue(elem['utterance_gt'])
@@ -93,19 +95,37 @@ class SDN_Tester:
             # TODO: add slot val evaluation
             #self.physical_action_slot_vals_correct
             frame = elem['frame']
-            print(f'EVALUATING FRAME = {frame}')
             try:
                 act = elem['val']['act']
                 slot_type = elem['val']['slot_type']
                 slot_val = elem['val']['slot_val']
 
-                pred_act = self.interface.physical_action_prompt(frame)
+                pred_act, orig_prompt, letter = self.interface.physical_action_prompt(frame)
 
                 if pred_act == act:
-                    print('Correct!')
+                    print('Correct slot type!')
                     self.physical_action_slot_types_correct += 1
+
+                    slot_val_correct = False
+                    if act == 'SpeedChange':
+                        ans = self.interface.speedchange_slot_val(orig_prompt, letter)
+                        slot_val_correct = (ans == slot_val)
+                    elif act == 'JTurn':
+                        ans = self.interface.jturn_slot_val(orig_prompt, letter)
+                        slot_val_correct = (abs(ans - slot_val) <= 15)
+                    else:
+                        slot_val_correct = True
+                    
+                    if slot_val_correct:
+                        print('Slot val correct!')
+                        self.physical_action_slot_vals_correct += 1
+                    else:
+                        print('Slot val incorrect')
                 else:
                     print(f'Incorrect; correct action was {act}')
+
+                
+
             except Exception as e:
                 warnings.warn('some sort of issue')
                 print(e)
@@ -146,5 +166,5 @@ if __name__ == '__main__':
     log_folder_path = '/data/owenh/arc_data/log_1651158519/'
     model = 6
 
-    sdn_tester = SDN_Tester(log_folder_path, model, 'cmd')
+    sdn_tester = SDN_Tester(log_folder_path, model, 'gpt4')
     sdn_tester.test_on_log()

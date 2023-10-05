@@ -17,6 +17,8 @@ class LLMInterface:
         self.dialogue_history = [] # List of all dialogue history
         self.phys_action_history = []
         self.town_map = town_map
+        self.car_is_stopped = True
+        self.car_speed = 25
         
     '''
         Prompts the LLM to adjust to an environmental change
@@ -61,7 +63,26 @@ class LLMInterface:
 
         action = actions[letter]
 
-        return action
+        return action, prompt, letter
+
+    def speedchange_slot_val(self, orig_prompt, response):
+        prompt = prompts.get_followup_speedchange(self)
+        response = self.comm_w_llm(orig_prompt, response=response, second_prompt=prompt)
+
+        letter = parse_mc_response(response)
+
+        if letter == 'A':
+            return 5
+        elif letter == 'B':
+            return -5
+        else:
+            return 0
+
+    def jturn_slot_val(self, orig_prompt, response):
+        prompt = prompts.get_followup_jturn(self)
+        response = self.comm_w_llm(orig_prompt, response=response, second_prompt=prompt)
+
+        return int(response)
 
     def dialogue_prompt(self):
         prompt = prompts.get_low_level_dialogue(self)
@@ -84,6 +105,14 @@ class LLMInterface:
         if slot_type != 'Null':
             action_str += ' ' + str(slot_type) + ' ' + str(slot_val)
 
+        if act == 'Start':
+            self.car_is_stopped = False
+        elif act == 'Stop':
+            self.car_is_stopped = True
+        
+        if act == 'SpeedChange':
+            self.car_speed += slot_val
+
         self.phys_action_history.append(action_str)
 
 
@@ -91,11 +120,11 @@ class LLMInterface:
         This function actually sends the already-created prompt
         to the LLM and receives the output
     '''
-    def comm_w_llm(self, prompt):
+    def comm_w_llm(self, prompt, response=None, second_prompt=None):
         if self.llm == 'cmd':
-            return receive_cmd_input(prompt)
+            return receive_cmd_input(prompt, response=response, second_prompt=second_prompt)
         elif self.llm == 'gpt4':
-            return receive_gpt4_input(prompt)
+            return receive_gpt4_input(prompt, response=response, second_prompt=second_prompt)
         elif self.llm == 'always_a':
             print(prompt)
             return 'D'
@@ -110,20 +139,30 @@ class LLMInterface:
         self.dialogue_history.append(formatted_dialogue)
         self.requires_evalutation = True
 
-def receive_cmd_input(prompt):
+def receive_cmd_input(prompt, response=None, second_prompt=None):
     print('------------------------------------------------------------------------')
-    print(prompt)
+    if response is None:
+        print(prompt)
+    else:
+        print(second_prompt)
     print('------------------------------------------------------------------------')
     val = input("Input: ")
     return val
 
 
-def receive_gpt4_input(prompt):
+def receive_gpt4_input(prompt, response=None, second_prompt=None):
+    if response is None:
+        messages=[{"role": "user", "content": prompt}]
+    else:
+        messages=[
+            {"role": "user", "content": prompt},
+            {"role": "assistant", "content": response},
+            {"role": "user", "content": second_prompt}
+        ]
+
     gpt_response = openai.ChatCompletion.create(
         model='gpt-4',
-        messages=[
-                {"role": "user", "content": prompt}
-            ],
+        messages=messages,
         temperature = 0
     )
 
