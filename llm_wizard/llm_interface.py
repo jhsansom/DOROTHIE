@@ -6,7 +6,7 @@ verbose = True
 
 class LLMInterface:
 
-    def __init__(self, assets, llm='cmd'):
+    def __init__(self, assets, town_map, llm='cmd'):
         self.llm = llm # By default, queries user input through CMD rather than an actual LLM
         self.requires_evalutation = True # if True, LLM needs to be queried at next time step
         self.new_goal = False
@@ -15,6 +15,7 @@ class LLMInterface:
         # State data
         self.current_goal = None
         self.dialogue_history = [] # List of all dialogue history
+        self.town_map = town_map
         
     '''
         Prompts the LLM to adjust to an environmental change
@@ -51,6 +52,16 @@ class LLMInterface:
 
         return response
 
+    def physical_action_prompt(self, frame):
+        prompt, actions = prompts.get_low_level_phys_action(self, frame)
+        response = self.comm_w_llm(prompt)
+
+        letter = parse_mc_response(response)
+
+        action = actions[letter]
+
+        return action
+
     def dialogue_prompt(self):
         prompt = prompts.get_low_level_dialogue(self)
         response = self.comm_w_llm(prompt)
@@ -73,6 +84,9 @@ class LLMInterface:
             return receive_cmd_input(prompt)
         elif self.llm == 'gpt4':
             return receive_gpt4_input(prompt)
+        elif self.llm == 'always_a':
+            print(prompt)
+            return 'D'
         else:
             raise Exception('Code not compatible with the LLM {llm} yet'.format(llm=self.llm))
 
@@ -117,4 +131,4 @@ def parse_mc_response(response):
         if letter in response:
             return letter
     
-    raise Exception
+    raise Exception('LLM did not return a valid character')

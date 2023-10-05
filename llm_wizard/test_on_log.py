@@ -1,4 +1,4 @@
-from llm_interface import LLMInterface
+import llm_interface import LLMInterface
 import openai
 import json
 import os
@@ -21,7 +21,8 @@ def examine_log(log_path):
         asset['type'] = elem['asset']
         assets.append(asset)
 
-    interface = LLMInterface(assets, llm='gpt4')
+    #interface = LLMInterface(assets, llm='gpt4')
+    interface = LLMInterface(assets, llm='cmd')
 
     # Test for goal updates
     num_goal_updates = 0

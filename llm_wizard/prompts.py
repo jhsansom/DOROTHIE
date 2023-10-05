@@ -42,6 +42,19 @@ def get_high_level_prompt(llm_interface):
 
     return prompt
 
+def print_map(llm_interface, frame):
+    prompt = "CURRENT MAP:\n"
+    prompt += llm_interface.town_map.load_map_at_frame(frame)
+    prompt += '\n'
+    prompt += llm_interface.town_map.get_vehicle_string()
+    prompt += '\nLandmark labels:\n'
+    prompt += llm_interface.town_map.get_landmark_string()
+    prompt += '\nStreet names:\n'
+    prompt += llm_interface.town_map.get_streetname_string()
+
+    return prompt
+
+
 #############################################################################################
 ############################## Low-level goal-setting prompts ###############################
 #############################################################################################
@@ -87,6 +100,36 @@ def get_low_level_dialogue(llm_interface):
     prompt += low_level_dialogue
 
     return prompt
+
+#############################################################################################
+################################## Physical action prompts ##################################
+#############################################################################################
+
+low_level_phys_action = '''
+You have been tasked with choosing the next physical action.
+You can choose a new action from among these options:
+'''
+
+action_choice = "({letter}) {potential_action}\n"
+
+all_actions = ['LaneFollow', 'LaneSwitch', 'UTurn', 'JTurn', 'Stop', 'Start', 'SpeedChange']
+
+def get_low_level_phys_action(llm_interface, frame):
+    prompt = header
+    prompt += print_dialogue(llm_interface)
+    prompt += '\n'
+    prompt += print_map(llm_interface, frame)
+    prompt += '\n'
+    prompt += low_level_phys_action
+    actions = {}
+    for i, action in enumerate(all_actions):
+        letter = string.ascii_uppercase[i]
+        prompt += action_choice.format(letter=letter, potential_action=action)
+        actions[letter] = action
+
+    prompt += only_mc
+
+    return prompt, actions
 
 #############################################################################################
 ###################################### Other prompts ########################################

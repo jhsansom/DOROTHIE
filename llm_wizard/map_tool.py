@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import pandas as pd
 import numpy as np
+import warnings
 import string
 import json
 import math
@@ -94,7 +96,7 @@ def get_intersection_coordinates(battleship_rep):
 
 class TownMap:
 
-    def __init__(self, town_name):
+    def __init__(self, town_name, config, trajectory_csv=None):
         self.town_name = town_name
 
         self.load_blank_map()
@@ -103,6 +105,10 @@ class TownMap:
         with open(town_data_filepath, 'r') as f:
             self.town_data = json.load(f)
 
+        if trajectory_csv is not None:
+            self.trajectories = pd.read_csv(trajectory_csv)
+
+        self.config = config
     
     def load_blank_map(self):
         text_maps = {
@@ -111,7 +117,65 @@ class TownMap:
 
         self.text_map = text_maps[self.town_name]
 
-    def add_landmark(self, landmarks):
+    def add_vehicle(self, frame):
+        row = self.trajectories.loc[self.trajectories['frame'] == frame]
+        road_id = int(row.iloc[0][' road_id'])
+        yaw = int(row.iloc[0][' yaw'])
+        #vehicle_pos = self.get_road_position(road_id)
+
+        x = row.iloc[0][' x']
+        y = row.iloc[0][' y']
+        vehicle_pos = self.get_absolute_position2((x,y))
+
+        yaw = (yaw % 360)
+        if yaw >=0 and yaw < 90:
+            self.vehicle_label = '>'
+            self.insert_char('>', vehicle_pos)
+        elif yaw >=90 and yaw < 180:
+            self.vehicle_label = '^'
+            self.insert_char('^', vehicle_pos)
+        elif yaw >=180 and yaw < 270:
+            self.vehicle_label = '<'
+            self.insert_char('<', vehicle_pos)
+        else:
+            self.vehicle_label = 'v'
+            self.insert_char('v', vehicle_pos)
+        
+
+    def load_map_at_frame(self, frame):
+        self.load_blank_map()
+        self.add_landmark()
+        self.add_vehicle(frame)
+
+        return self.text_map
+
+    def get_landmark_string(self):
+        string = ''
+        for name, letter in self.landmark_key.items():
+            string += letter + ': ' + name + '\n'
+        return string 
+
+    def get_streetname_string(self):
+        street_string = 'The streets on this map are as follows:\n'
+        for i, street_name in enumerate(self.config['environment']['street_names']):
+            street_string += street_name
+            street_string += ': '
+            junction_ids = self.town_data['streets']['junction_id'][i]
+            for j, junction in enumerate(junction_ids):
+                if junction in intersection_ids.keys():
+                    if j > 0:
+                        street_string += ' -> '
+                    int_name = intersection_ids[junction]
+                    street_string += int_name
+            street_string += '\n'
+
+        return street_string
+
+    def get_vehicle_string(self):
+        return f'The vehicle is currently represented by the character {self.vehicle_label} to represent the direction it is facing.'
+
+    def add_landmark(self):
+        landmarks = self.config['environment']['landmarks']
         self.landmark_key = {}
         for i, landmark in enumerate(landmarks):
             landmark_name = landmark['name']
@@ -123,6 +187,9 @@ class TownMap:
             try:
                 self.insert_char(letter, landmark_pos)
             except Exception as e:
+                x, y = landmark_pos
+                warning_str = f'landmark {landmark_name}, with coordinate ({x}, {y}), was off map'
+                warnings.warn(warning_str)
                 print(e) # TODO: not sure why some coordinates are way off-map
 
     def get_absolute_position(self, coor):
@@ -159,16 +226,86 @@ class TownMap:
 
         return (x_coor, y_coor)
 
+    def get_absolute_position2(self, coor):
+        node1 = None
+        node2 = None
+        id1 = None
+        id2 = None
 
-    def get_road_position(self, road_id):
+        nodes = self.town_data['meta_map']['nodes']
+
+        distances = []
+        for node in nodes:
+            id_num = node['id']
+            x = node['x_axis']
+            y = node['y_axis']
+            dist_sq = (coor[0] - x)**2 + (coor[1] - y)**2
+
+            distances.append(dist_sq)
+
+        sorted_dist = np.argsort(distances)
+        node1_rep = nodes[sorted_dist[0]]
+        node1 = (node1_rep['x_axis'], node1_rep['y_axis'])
+        id1 = intersection_ids[node1_rep['id']]
+        x_diff = (node1[0] - coor[0]) > 0
+        y_diff = (node1[1] - coor[1]) > 0
+
+        node2_rep = nodes[sorted_dist[1]]
+        node2 = (node2_rep['x_axis'], node2_rep['y_axis'])
+        id2 = intersection_ids[node2_rep['id']]
+
+        found_better_node = False
+        for i in range(len(nodes) - 1):
+            potential_node = nodes[sorted_dist[i+1]]
+            potential_coors = (potential_node['x_axis'], potential_node['y_axis'])
+            x_diff_pot = (potential_coors[0] - coor[0]) > 0
+            y_diff_pot = (potential_coors[1] - coor[1]) > 0
+
+            if (x_diff != x_diff_pot) and (y_diff != y_diff_pot):
+                found_better_node = True
+                node2 = potential_coors
+                id2 = intersection_ids[potential_node['id']]
+                break
+
+        node1_text_coor = get_intersection_coordinates(id1)
+        node2_text_coor = get_intersection_coordinates(id2)
+
+        x_coor = int(node1_text_coor[0] + round((coor[0] - node1[0]) / (node2[0] - node1[0]) * (node2_text_coor[0] - node1_text_coor[0])))
+        y_coor = int(node1_text_coor[1] + round((coor[1] - node1[1]) / (node2[1] - node1[1]) * (node2_text_coor[1] - node1_text_coor[1])))
+
+        vehicle_coor = (x_coor, y_coor)
+
+        '''
+        print('Starting vehicle placement')
+        print(f'Vehicle pos = {coor}')
+        print(f'node1 = {node1}')
+        print(f'node2 = {node2}')
+        print(f'node1_text_coor = {node1_text_coor}')
+        print(f'node2_text_coor = {node2_text_coor}')
+        print(f'vehicle_coor = {vehicle_coor}')
+        print(f'found_better_node = {found_better_node}')
+        '''
+
+        return vehicle_coor
+
+
+    def get_vehicle_position(self, road_id, coor):
         intersections = []
         for node in self.town_data['meta_map']['nodes']:
             if road_id in node['neighbor_edge']:
                 intersection = intersection_ids[node['id']]
                 intersections.append(intersection)
 
+        if len(intersections) < 2:
+            print(f'WARNING: road_id {road_id} is not in intersection_ids')
+            raise Exception
+
         i1 = get_intersection_coordinates(intersections[0])
         i2 = get_intersection_coordinates(intersections[1])
+
+        print(i1)
+        print(i2)
+        print(coor)
 
         # Re-arrange so that intersection with smaller column num
         # comes first in tuple
