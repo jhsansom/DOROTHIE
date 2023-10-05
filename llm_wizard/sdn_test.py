@@ -69,6 +69,9 @@ class SDN_Tester:
         if self.eval_physical_actions:
             self.eval_physical_action(elem)
 
+        if elem['type'] == 'PhysicalAction':
+            self.interface.inject_physical_action(elem)
+
         self.cur_timestep += 1
 
     def eval_goal_update(self, elem):
@@ -143,5 +146,5 @@ if __name__ == '__main__':
     log_folder_path = '/data/owenh/arc_data/log_1651158519/'
     model = 6
 
-    sdn_tester = SDN_Tester(log_folder_path, model, 'gpt4')
+    sdn_tester = SDN_Tester(log_folder_path, model, 'cmd')
     sdn_tester.test_on_log()

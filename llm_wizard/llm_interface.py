@@ -15,6 +15,7 @@ class LLMInterface:
         # State data
         self.current_goal = None
         self.dialogue_history = [] # List of all dialogue history
+        self.phys_action_history = []
         self.town_map = town_map
         
     '''
@@ -73,6 +74,17 @@ class LLMInterface:
     def inject_llm_dialogue(self, dialogue):
         formatted_response = 'CHAUFFEURGPT: {dialogue}'.format(dialogue=dialogue)
         self.dialogue_history.append(formatted_response)
+
+    def inject_physical_action(self, elem):
+        act = elem['val']['act']
+        slot_type = elem['val']['slot_type']
+        slot_val = elem['val']['slot_val']
+
+        action_str = act
+        if slot_type != 'Null':
+            action_str += ' ' + str(slot_type) + ' ' + str(slot_val)
+
+        self.phys_action_history.append(action_str)
 
 
     '''

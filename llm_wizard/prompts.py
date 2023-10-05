@@ -120,6 +120,8 @@ def get_low_level_phys_action(llm_interface, frame):
     prompt += '\n'
     prompt += print_map(llm_interface, frame)
     prompt += '\n'
+    prompt += print_action_history(llm_interface)
+    prompt += '\n'
     prompt += low_level_phys_action
     actions = {}
     for i, action in enumerate(all_actions):
@@ -130,6 +132,13 @@ def get_low_level_phys_action(llm_interface, frame):
     prompt += only_mc
 
     return prompt, actions
+
+def print_action_history(llm_interface):
+    prompt = 'PHYSICAL ACTION HISTORY:\n'
+    for action in llm_interface.phys_action_history:
+        prompt += action + '\n'
+
+    return prompt
 
 #############################################################################################
 ###################################### Other prompts ########################################

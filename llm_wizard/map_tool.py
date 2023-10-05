@@ -127,14 +127,15 @@ class TownMap:
         y = row.iloc[0][' y']
         vehicle_pos = self.get_absolute_position2((x,y))
 
-        yaw = (yaw % 360)
-        if yaw >=0 and yaw < 90:
+        yaw = (-yaw % 360)
+        print(f'yaw = {yaw}')
+        if yaw >= 315 or yaw < 45:
             self.vehicle_label = '>'
             self.insert_char('>', vehicle_pos)
-        elif yaw >=90 and yaw < 180:
+        elif yaw >= 45 and yaw < 135:
             self.vehicle_label = '^'
             self.insert_char('^', vehicle_pos)
-        elif yaw >=180 and yaw < 270:
+        elif yaw >= 135 and yaw < 225:
             self.vehicle_label = '<'
             self.insert_char('<', vehicle_pos)
         else:
@@ -221,8 +222,8 @@ class TownMap:
         node1_text_coor = get_intersection_coordinates(id1)
         node2_text_coor = get_intersection_coordinates(id2)
 
-        x_coor = int(node1_text_coor[0] + round((coor[0] - node1[0]) / (node2[0] - node1[0]) * (node2_text_coor[0] - node1_text_coor[0])))
-        y_coor = int(node1_text_coor[1] + round((coor[1] - node1[1]) / (node2[1] - node1[1]) * (node2_text_coor[1] - node1_text_coor[1])))
+        x_coor = int(node1_text_coor[0] + round((coor[1] - node1[1]) / (node2[1] - node1[1]) * (node2_text_coor[0] - node1_text_coor[0])))
+        y_coor = int(node1_text_coor[1] + round((coor[0] - node1[0]) / (node2[0] - node1[0]) * (node2_text_coor[1] - node1_text_coor[1])))
 
         return (x_coor, y_coor)
 
@@ -270,8 +271,9 @@ class TownMap:
         node1_text_coor = get_intersection_coordinates(id1)
         node2_text_coor = get_intersection_coordinates(id2)
 
-        x_coor = int(node1_text_coor[0] + round((coor[0] - node1[0]) / (node2[0] - node1[0]) * (node2_text_coor[0] - node1_text_coor[0])))
-        y_coor = int(node1_text_coor[1] + round((coor[1] - node1[1]) / (node2[1] - node1[1]) * (node2_text_coor[1] - node1_text_coor[1])))
+        # NOTE: coordinates are (x,y) in CARLA but (y, x) in NumPy matrices!
+        x_coor = int(node1_text_coor[0] + round((coor[1] - node1[1]) / (node2[1] - node1[1]) * (node2_text_coor[0] - node1_text_coor[0])))
+        y_coor = int(node1_text_coor[1] + round((coor[0] - node1[0]) / (node2[0] - node1[0]) * (node2_text_coor[1] - node1_text_coor[1])))
 
         vehicle_coor = (x_coor, y_coor)
 
@@ -284,6 +286,8 @@ class TownMap:
         print(f'node2_text_coor = {node2_text_coor}')
         print(f'vehicle_coor = {vehicle_coor}')
         print(f'found_better_node = {found_better_node}')
+        print(f'node1_battleship = {id1}')
+        print(f'node2_battleship = {id2}')
         '''
 
         return vehicle_coor
